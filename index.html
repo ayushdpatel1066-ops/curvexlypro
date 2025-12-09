@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Curvexly | The Premium AI Tools Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"Inter"', 'monospace'],
+            },
+            colors: {
+              curvex: {
+                bg: 'var(--bg)',
+                card: 'var(--card)',
+                border: 'var(--border)',
+                text: 'var(--text)',
+                muted: 'var(--muted)',
+                accent: 'var(--accent)',
+                input: 'var(--input-bg)'
+              }
+            },
+            boxShadow: {
+              'premium': 'var(--card-shadow)',
+              'glow': '0 0 20px rgba(0,0,0,0.3)',
+            },
+            animation: {
+              'float-in': 'float-in 0.4s ease-out forwards',
+              'shine': 'shine 8s linear infinite',
+            },
+            keyframes: {
+              'float-in': {
+                'from': { opacity: 0, transform: 'translateY(20px)' },
+                'to': { opacity: 1, transform: 'translateY(0)' }
+              },
+              shine: {
+                '0%': { backgroundPosition: '200% center' },
+                '100%': { backgroundPosition: '-200% center' }
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        :root {
+            /* Light Mode Defaults */
+            --bg: #F8FAFC;
+            --card: #FFFFFF;
+            --border: #E2E8F0;
+            --text: #0F172A;
+            --muted: #64748B;
+            --accent: #000000;
+            --input-bg: #FFFFFF;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .dark {
+            /* Dark Mode Defaults - OLED Black */
+            --bg: #000000;
+            --card: #0F0F0F;
+            --border: #222222;
+            --text: #F2F2F2;
+            --muted: #888888;
+            --accent: #FFFFFF;
+            --input-bg: #0F0F0F;
+            --card-shadow: 0 0 0 1px #222222;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border); 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--muted); 
+        }
+
+        .glass-panel {
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

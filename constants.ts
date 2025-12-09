@@ -1,0 +1,85 @@
+import { Tool, Banner } from './types';
+
+export const CATEGORIES = ['All', 'Chat', 'Image', 'Video', 'Coding', 'Audio', 'Business', 'Writing'];
+
+export const PROMO_BANNERS: Banner[] = [
+    { 
+        id: 1, 
+        isSpecial: true, 
+        brand: 'google',
+        title: 'Gemini Advanced', 
+        offerDescription: 'Get <span class="text-yellow-300 font-extrabold">2 months</span> of Google\'s most capable AI.',
+        cta: 'CLAIM', 
+        gradient: 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-700', 
+        link: '#',
+        logo: 'https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg',
+        price: 'FREE',
+        oldPrice: '$19.99'
+    },
+    { 
+        id: 2, 
+        isSpecial: true,
+        brand: 'openai', 
+        title: 'ChatGPT Plus', 
+        offerDescription: 'Unlock <span class="text-teal-200 font-extrabold">o1-preview</span> reasoning model today.',
+        cta: 'Claim', 
+        gradient: 'bg-gradient-to-r from-teal-600 via-emerald-600 to-green-700', 
+        link: '#',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg', 
+        price: 'Free',
+        oldPrice: '$20'
+    },
+    { 
+        id: 3, 
+        title: 'Midjourney v6', 
+        subtitle: 'Hyper-realistic generation.', 
+        cta: 'Explore', 
+        gradient: 'bg-gradient-to-br from-fuchsia-600 to-purple-800', 
+        link: 'https://www.midjourney.com' 
+    },
+];
+
+export const AI_TOOLS: Tool[] = [
+    { id: '1', name: 'ChatGPT', description: 'OpenAI\'s flagship conversational AI model capable of varied tasks.', category: 'Chat', tags: ['bot', 'text'], pricing: 'Freemium', website: 'https://chat.openai.com', featured: true },
+    { id: '2', name: 'Midjourney', description: 'Generates hyper-realistic images from textual descriptions.', category: 'Image', tags: ['art', 'generation'], pricing: 'Paid', website: 'https://www.midjourney.com', featured: true },
+    { id: '3', name: 'GitHub Copilot', description: 'AI pair programmer that helps you write code faster.', category: 'Coding', tags: ['dev', 'code'], pricing: 'Paid', website: 'https://github.com/features/copilot', featured: true },
+    { id: '4', name: 'Jasper', description: 'AI content platform for enterprise marketing teams.', category: 'Writing', tags: ['marketing', 'copy'], pricing: 'Paid', website: 'https://www.jasper.ai', featured: false },
+    { id: '5', name: 'Runway', description: 'Applied AI research powering the next era of art and creativity.', category: 'Video', tags: ['editor', 'film'], pricing: 'Freemium', website: 'https://runwayml.com', featured: true },
+    { id: '6', name: 'Claude', description: 'Next generation AI assistant built for work and reliability.', category: 'Chat', tags: ['anthropic'], pricing: 'Free', website: 'https://claude.ai', featured: true },
+    { id: '7', name: 'Stable Diffusion', description: 'Latent text-to-image diffusion model.', category: 'Image', tags: ['open source'], pricing: 'Free', website: 'https://stability.ai', featured: false },
+    { id: '8', name: 'ElevenLabs', description: 'The most realistic AI voice generator.', category: 'Audio', tags: ['voice', 'tts'], pricing: 'Freemium', website: 'https://elevenlabs.io', featured: true },
+    { id: '9', name: 'Notion AI', description: 'Access the limitless power of AI right inside Notion.', category: 'Business', tags: ['notes', 'productivity'], pricing: 'Paid', website: 'https://www.notion.so/product/ai', featured: false },
+    { id: '10', name: 'Synthesia', description: 'Create professional AI videos from text in 120+ languages.', category: 'Video', tags: ['avatar'], pricing: 'Paid', website: 'https://www.synthesia.io', featured: false },
+    { id: '11', name: 'Sora', description: 'Text-to-video model by OpenAI.', category: 'Video', tags: ['new'], pricing: 'Paid', website: 'https://openai.com/sora', featured: false },
+    { id: '12', name: 'Gemini', description: 'Google\'s multimodal AI model.', category: 'Chat', tags: ['google'], pricing: 'Free', website: 'https://gemini.google.com', featured: false },
+    { id: '13', name: 'Perplexity', description: 'Conversational answer engine that cites sources in real-time.', category: 'Chat', tags: ['search', 'research'], pricing: 'Freemium', website: 'https://www.perplexity.ai', featured: true },
+    { id: '14', name: 'Leonardo.ai', description: 'Generate production-quality visual assets for your projects.', category: 'Image', tags: ['game assets', 'art'], pricing: 'Freemium', website: 'https://leonardo.ai', featured: true },
+    { id: '15', name: 'HeyGen', description: 'Produce studio-quality videos with AI-generated avatars and voices.', category: 'Video', tags: ['avatar', 'business'], pricing: 'Paid', website: 'https://www.heygen.com', featured: false },
+    { id: '16', name: 'Suno', description: 'Create realistic music and songs from simple text prompts.', category: 'Audio', tags: ['music', 'generation'], pricing: 'Freemium', website: 'https://suno.com', featured: true },
+    { id: '17', name: 'Cursor', description: 'The AI-first code editor designed for pair-programming.', category: 'Coding', tags: ['ide', 'editor'], pricing: 'Freemium', website: 'https://cursor.com', featured: true },
+    { id: '18', name: 'Gamma', description: 'Create beautiful presentations, documents, and webpages.', category: 'Business', tags: ['slides', 'decks'], pricing: 'Freemium', website: 'https://gamma.app', featured: false },
+    { id: '19', name: 'Copy.ai', description: 'Marketing copy generator for email, blogs, and social media.', category: 'Writing', tags: ['marketing', 'sales'], pricing: 'Freemium', website: 'https://www.copy.ai', featured: false },
+    { id: '20', name: 'Adobe Firefly', description: 'Generative AI for creators, integrated into Adobe apps.', category: 'Image', tags: ['design', 'adobe'], pricing: 'Freemium', website: 'https://firefly.adobe.com', featured: false },
+    { id: '21', name: 'Pika', description: 'Idea-to-video platform that brings your creativity to life.', category: 'Video', tags: ['animation', '3d'], pricing: 'Freemium', website: 'https://pika.art', featured: true },
+    { id: '22', name: 'Grammarly', description: 'AI writing assistance for clear, mistake-free writing.', category: 'Writing', tags: ['grammar', 'edit'], pricing: 'Freemium', website: 'https://www.grammarly.com', featured: false },
+    { id: '23', name: 'Udio', description: 'Create music from scratch with high-fidelity vocals.', category: 'Audio', tags: ['music', 'vocals'], pricing: 'Freemium', website: 'https://www.udio.com', featured: true },
+    { id: '24', name: 'Character.ai', description: 'Chat with open-ended AI personas and characters.', category: 'Chat', tags: ['entertainment', 'social'], pricing: 'Freemium', website: 'https://character.ai', featured: false },
+    { id: '25', name: 'Beautiful.ai', description: 'Generative presentation software for the workplace.', category: 'Business', tags: ['slides', 'design'], pricing: 'Paid', website: 'https://www.beautiful.ai', featured: false },
+    { id: '26', name: 'Poe', description: 'Fast, helpful AI chat. Aggregate multiple models in one place.', category: 'Chat', tags: ['aggregator', 'bot'], pricing: 'Freemium', website: 'https://poe.com', featured: false },
+    { id: '27', name: 'Luma Dream Machine', description: 'High-quality video generation model from Luma AI.', category: 'Video', tags: ['realistic', 'gen-ai'], pricing: 'Free', website: 'https://lumalabs.ai/dream-machine', featured: true },
+    { id: '28', name: 'Canva Magic', description: 'All-in-one visual design suite powered by AI tools.', category: 'Image', tags: ['design', 'social'], pricing: 'Freemium', website: 'https://www.canva.com', featured: false },
+    { id: '29', name: 'Grok', description: 'Conversational AI by xAI with real-time access to X.', category: 'Chat', tags: ['twitter', 'news'], pricing: 'Paid', website: 'https://x.ai', featured: false },
+    { id: '30', name: 'Otter.ai', description: 'AI meeting assistant that records audio and takes notes.', category: 'Audio', tags: ['transcription', 'meeting'], pricing: 'Freemium', website: 'https://otter.ai', featured: false },
+    { id: '31', name: 'Quillbot', description: 'AI-powered paraphrasing tool to enhance your writing.', category: 'Writing', tags: ['rewrite', 'student'], pricing: 'Freemium', website: 'https://quillbot.com', featured: false },
+    { id: '32', name: 'Replit', description: 'Cloud IDE with Ghostwriter AI for coding assistance.', category: 'Coding', tags: ['cloud', 'ide'], pricing: 'Freemium', website: 'https://replit.com', featured: false },
+    { id: '33', name: 'Mistral', description: 'Open-weights models accessible via API and Le Chat.', category: 'Chat', tags: ['open source', 'eu'], pricing: 'Free', website: 'https://mistral.ai', featured: false },
+    { id: '34', name: 'InVideo', description: 'Turn text into video with stock footage and voiceovers.', category: 'Video', tags: ['youtube', 'marketing'], pricing: 'Freemium', website: 'https://invideo.io', featured: false },
+    { id: '35', name: 'Murf.ai', description: 'Versatile AI voice generator for professional voiceovers.', category: 'Audio', tags: ['tts', 'voiceover'], pricing: 'Paid', website: 'https://murf.ai', featured: false },
+    { id: '36', name: 'Zapier', description: 'Automate workflows between apps with AI assistance.', category: 'Business', tags: ['automation', 'workflow'], pricing: 'Freemium', website: 'https://zapier.com', featured: false },
+    { id: '37', name: 'Tabnine', description: 'AI assistant for software developers that anticipates needs.', category: 'Coding', tags: ['autocomplete', 'security'], pricing: 'Freemium', website: 'https://www.tabnine.com', featured: false },
+    { id: '38', name: 'Clipdrop', description: 'Ecosystem of AI editing apps, plugins, and resources.', category: 'Image', tags: ['editing', 'cleanup'], pricing: 'Freemium', website: 'https://clipdrop.co', featured: false },
+    { id: '39', name: 'Writesonic', description: 'AI writer for SEO-optimized content and blogs.', category: 'Writing', tags: ['seo', 'blog'], pricing: 'Freemium', website: 'https://writesonic.com', featured: false },
+    { id: '40', name: 'Hugging Face', description: 'The platform where the machine learning community collaborates.', category: 'Coding', tags: ['models', 'hub'], pricing: 'Free', website: 'https://huggingface.co', featured: false },
+    { id: '41', name: 'Descript', description: 'Video and audio editor that works like a doc.', category: 'Video', tags: ['podcast', 'editing'], pricing: 'Freemium', website: 'https://www.descript.com', featured: false },
+    { id: '42', name: 'Ideogram', description: 'Advanced text-to-image model with superior typography.', category: 'Image', tags: ['typography', 'logos'], pricing: 'Freemium', website: 'https://ideogram.ai', featured: true }
+];
